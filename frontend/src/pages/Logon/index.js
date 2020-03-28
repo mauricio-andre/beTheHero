@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiLogIn } from 'react-icons/fi'
+import { FiLogIn } from 'react-icons/fi';
 import api from '../../services/api';
 
 import './styles.css';
@@ -39,7 +39,9 @@ export default function Logon(props) {
             value={id}
             onChange={event => setId(event.target.value)}
           />
-          <button className="button" type="submit">Entrar</button>
+          <button className="button" type="submit">
+            Entrar
+          </button>
 
           <Link className="back-link" to="/register">
             <FiLogIn size={16} color="#E02041" />
@@ -50,5 +52,5 @@ export default function Logon(props) {
 
       <img src={herosImg} alt="Heros" />
     </div>
-  )
+  );
 }

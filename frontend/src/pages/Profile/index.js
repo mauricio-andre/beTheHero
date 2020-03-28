@@ -16,13 +16,15 @@ export default function Profile() {
   const history = useHistory();
 
   useEffect(() => {
-    api.get('profile', {
-      headers: {
-        Authorization: ongId,
-      },
-    }).then(response => {
-      setIncidents(response.data);
-    });
+    api
+      .get('profile', {
+        headers: {
+          Authorization: ongId,
+        },
+      })
+      .then(response => {
+        setIncidents(response.data);
+      });
   }, [ongId]);
 
   async function handleDeleteIncident(id) {
@@ -50,7 +52,9 @@ export default function Profile() {
         <img src={logoImg} alt="Be The Hero" />
         <span>Bem vinda, {ongName}</span>
 
-        <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
+        <Link className="button" to="/incidents/new">
+          Cadastrar novo caso
+        </Link>
         <button type="button" onClick={handleLogout}>
           <FiPower size={18} color="#E02041" />
         </button>
@@ -68,14 +72,24 @@ export default function Profile() {
             <p>{incident.description}</p>
 
             <strong>VALOR:</strong>
-            <p>{Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
+            <p>
+              {Intl.NumberFormat('pt-br', {
+                style: 'currency',
+                currency: 'BRL',
+              }).format(incident.value)}
+            </p>
 
-            <button type="button" onClick={() => { handleDeleteIncident(incident.id) }}>
+            <button
+              type="button"
+              onClick={() => {
+                handleDeleteIncident(incident.id);
+              }}
+            >
               <FiTrash2 size={20} color="#a8a8b3" />
             </button>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }

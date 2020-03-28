@@ -15,5 +15,5 @@ export default function Routes() {
         <AppStack.Screen name="Detail" component={Detail} />
       </AppStack.Navigator>
     </NavigationContainer>
-  )
+  );
 }

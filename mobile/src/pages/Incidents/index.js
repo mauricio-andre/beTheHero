@@ -32,7 +32,7 @@ export default function() {
 
     setLoading(true);
     const response = await api.get(`incidents`, {
-      params: { page }
+      params: { page },
     });
     setIncidents([...incidents, ...response.data]);
     setTotal(response.headers['x-total-count']);
@@ -54,7 +54,9 @@ export default function() {
       </View>
 
       <Text style={styles.title}>Bem-vindo!</Text>
-      <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia</Text>
+      <Text style={styles.description}>
+        Escolha um dos casos abaixo e salve o dia
+      </Text>
 
       <FlatList
         data={incidents}
@@ -75,13 +77,15 @@ export default function() {
             <Text style={styles.incidentValue}>
               {Intl.NumberFormat('pt-br', {
                 style: 'currency',
-                currency: 'BRL'
+                currency: 'BRL',
               }).format(incident.value)}
             </Text>
 
             <TouchableOpacity
               style={styles.detailsButton}
-              onPress={() => { navigationToDetail(incident) }}
+              onPress={() => {
+                navigationToDetail(incident);
+              }}
             >
               <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
               <Feather name="arrow-right" size={16} color="#E02041" />
@@ -90,5 +94,5 @@ export default function() {
         )}
       />
     </View>
-  )
-};
+  );
+}
