@@ -31,7 +31,7 @@ O processo de inicialização deste projeto é muito simples, estes requerem o n
 4. Executando o mobile
   - Abra o diretório mobile e execute `npm start`
   - Na tela do browser que for apresentada, copie o endereço ip (sem a porta) apresentado no canto inferior esquerdo da tela
-  - Abra o arquivo [api.js](./mobile/services/api.js)
+  - Abra o arquivo [api.js](./mobile/src/services/api.js) em *mobile/src/services/*
   - Edite o endereço ip do parâmetro `baseURL` copiado anteriormente
   - No terminal usado para inicializar o mobile presione Ctrl+C para parar o servidor
   - Execute novamente `npm start`
