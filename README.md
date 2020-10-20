@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./.assets/logo.svg" alt="logo: Be the hero" width="300px" />
+    <img src="./.github/logo.svg" alt="logo: Be the hero" width="300px" />
 </h1>
 
 <h3 align="center">
@@ -15,7 +15,7 @@ Este projeto foi desenvolvido no período de uma semana durante o evento *semana
 O projeto **Be The Hero** é uma plataforma para que ong's sem fins lucrativos possam relatar casos de ações que precisam de financiamento para serem executados, esses relatos ocorrem por meio de uma plataforma Web e são consultados por meio do App de celular pela comunidade, que pode visualizar os casos relatados e escolher um ou mais casos para financiar, por meio do App a comunidade pode entrar em contato sendo direcionado para o whatsapp ou email da ong escolhida.
 
 <div align="center">
-    <img src="./.assets/exemplo.png" alt="Exemplo de tela" />
+    <img src="./.github/exemplo.png" alt="Exemplo de tela" />
 </div>
 
 
@@ -42,7 +42,7 @@ O processo de inicialização deste projeto é muito simples, estes requerem o n
 
 O backend desta aplicação é uma API REST, as rotas existentes foram testadas durante o seu desenvolvimento com o aplicativo Insomnia, você pode baixar o json de teste clicando no botão abaixo.
 
-[![Run in Insomnia}](./.assets/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fmauricio-andre%2FbeTheHero%2Fmaster%2F.assets%2FInsomnia.json)
+[![Run in Insomnia}](./.github/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fmauricio-andre%2FbeTheHero%2Fmaster%2F.github%2FInsomnia.json)
 
 ## Seja um herói de verdade
 
