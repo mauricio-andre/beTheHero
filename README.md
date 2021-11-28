@@ -8,6 +8,8 @@
 
 ---
 
+:warning: Este projeto não está recebendo atualizaçõe, antes de utiliza-lo, execute o comando `yarn audit` para checar vulnerabilidades nas dependencias do mesmo. :warning:
+
 ## Sobre o projeto
 
 Este projeto foi desenvolvido no período de uma semana durante o evento *semana omnistack 11*. Neste evento usamos uma única linguagem de programação, o Javascript, para desenvolve o backend, frontend e o mobile do projeto além de rotinas de testes automatizados.
